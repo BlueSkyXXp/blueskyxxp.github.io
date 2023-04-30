@@ -6,7 +6,7 @@
   <link href="https://blueskyxxp.github.io/atom.xml" rel="self"/>
   
   <link href="https://blueskyxxp.github.io/"/>
-  <updated>2023-04-30T19:15:42.023Z</updated>
+  <updated>2023-04-30T20:36:00.598Z</updated>
   <id>https://blueskyxxp.github.io/</id>
   
   <author>
@@ -21,17 +21,21 @@
     <link href="https://blueskyxxp.github.io/2023/05/01/%E7%82%92%E8%82%A1/"/>
     <id>https://blueskyxxp.github.io/2023/05/01/%E7%82%92%E8%82%A1/</id>
     <published>2023-04-30T18:10:03.000Z</published>
-    <updated>2023-04-30T19:15:42.023Z</updated>
+    <updated>2023-04-30T20:36:00.598Z</updated>
     
-    <content type="html"><![CDATA[<p>2023年5月1日，阅读日本蜡烛技术并总结如下：</p><!-- more --><p>当时发生的快乐</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="初识K线-蜡烛图"><a href="#初识K线-蜡烛图" class="headerlink" title="初识K线(蜡烛图)"></a>初识K线(蜡烛图)</h3><pre><code class="hljs">首先看下面这样一张图片</code></pre><p><img src="/img/article/k.png" alt="k线图"></p><ul><li>k线实体和影线<br>  中空部分(矩形)为实体，上下细线为影线。<br>  <strong>阳线</strong>：收盘价 &gt; 开盘价<br>  <strong>阴线</strong>：收盘价 &lt; 开盘价<br>  上影线顶部为最高点价格，下影线底部为最低点价格<br>  蜡烛线越长(矩形越长)表示买盘或卖盘越长</li><li>长阳线和长阴线<br>  长阳线：买盘强势，市场多头力量超过空头，推高股价。从供需关系来看，买盘强表示供求 &lt; 需求，导致股价上升。<br>  长阴线： 卖盘强势，市场空头超过多头，做空压低股价。</li><li></li></ul>]]></content>
     
     
     <summary type="html">摘要</summary>
     
     
     
+    <category term="股票" scheme="https://blueskyxxp.github.io/categories/%E8%82%A1%E7%A5%A8/"/>
+    
     
     <category term="股票" scheme="https://blueskyxxp.github.io/tags/%E8%82%A1%E7%A5%A8/"/>
+    
+    <category term="金融" scheme="https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/"/>
     
   </entry>
   
