@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blueskyxxp.github.io/404.html</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blueskyxxp.github.io/tags/index.html</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blueskyxxp.github.io/catagories/index.html</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blueskyxxp.github.io/2023/04/30/hello-world/</loc>
     
     <lastmod>2023-04-30</lastmod>
