@@ -6,7 +6,7 @@
   <link href="https://blueskyxxp.github.io/atom.xml" rel="self"/>
   
   <link href="https://blueskyxxp.github.io/"/>
-  <updated>2023-05-03T17:22:31.241Z</updated>
+  <updated>2023-05-09T17:12:55.509Z</updated>
   <id>https://blueskyxxp.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>经济相关概念和知识--(1)</title>
+    <link href="https://blueskyxxp.github.io/2023/05/10/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/"/>
+    <id>https://blueskyxxp.github.io/2023/05/10/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</id>
+    <published>2023-05-09T17:10:03.000Z</published>
+    <updated>2023-05-09T17:12:55.509Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一些你必须懂的专业词汇"><a href="#一些你必须懂的专业词汇" class="headerlink" title="一些你必须懂的专业词汇"></a>一些你必须懂的专业词汇</h1><h2 id="M0-M1-M2货币供应量"><a href="#M0-M1-M2货币供应量" class="headerlink" title="M0\M1\M2货币供应量"></a>M0\M1\M2货币供应量</h2><p>三个定义M代表monetary。</p><ul><li>M0表示流通中的现金，即居民手中的资金，一般来说M0越大表示老百姓手中的钱越宽裕。</li><li>狭义货币量M1&#x3D;M0+企业活期存款，流动性仅次于M0，代表大家目前的购买能力。</li><li>广义货币量M2&#x3D;M1+定期存款+储蓄存款+其他存款+证券公司客户保证金。M2不仅反映现实的购买力，还反映潜在的购买力。</li><li>关于这些数据可以查询<a href="https://mp.weixin.qq.com/s/LBIMYzOKAt4NQ7WlqekKZg">相关公众号</a></li></ul><p>GDP&#x2F;CPI&#x2F;PPI&#x2F;PMI相关指标<br>这些指标可以在国家统计局官网查询<br><a href="https://data.stats.gov.cn/index.htm">https://data.stats.gov.cn/index.htm</a><br>全世界的相关指标可以移步<br><a href="https://zh.tradingeconomics.com/">https://zh.tradingeconomics.com/</a></p><p>GDP国民生产总值：<br>GDP（国内生产总值）是衡量一个国家或地区经济总量的指标，表示在一定时间内，一个国家或地区所有企业、个人和政府所生产的全部商品和服务的价值总和。GDP是衡量一个国家或地区经济发展水平的重要指标，也是制定宏观经济政策的重要参考依据。<br>CPI居民消费指数</p><ol><li>CPI（居民消费价格指数）是衡量一定时期内一篮子消费品和服务价格变动情况的指标，反映了居民购买日常消费品和服务的成本变化。CPI是衡量通货膨胀水平的重要指标，也是制定货币政策的重要参考依据。<br>PPI</li><li>PPI（生产者出厂价格指数）是衡量一定时期内工业生产部门生产的商品出厂价格变动情况的指标，反映了工业生产部门生产成本和利润水平的变化。PPI是衡量物价上涨对生产企业的影响的重要指标，也是制定宏观经济政策的重要参考依据。<br>PMI</li><li>PMI（采购经理人指数）是衡量制造业和非制造业采购经理人对生产活动的信心和预期的指标，反映了制造业和非制造业企业生产活动的扩张或收缩情况。PMI是衡量经济景气度的重要指标，也是制定宏观经济政策的重要参考依据。<br>美联储利率见<br><a href="https://fred.stlouisfed.org/series/FEDFUNDS">https://fred.stlouisfed.org/series/FEDFUNDS</a><br>[图片]<br>可以见到2023年3月美元利息大约为4.65</li></ol>]]></content>
+    
+    
+    <summary type="html">该文介绍了经济相关的一些概念。</summary>
+    
+    
+    
+    <category term="经济" scheme="https://blueskyxxp.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
+    
+    
+    <category term="金融" scheme="https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>今日随想</title>
