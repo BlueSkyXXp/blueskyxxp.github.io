@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>mac锁屏后如何让程序继续运行</title>
+    <link href="/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/"/>
+    <url>/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/</url>
+    
+    <content type="html"><![CDATA[<h2 id="mac锁屏后让程序继续运行"><a href="#mac锁屏后让程序继续运行" class="headerlink" title="mac锁屏后让程序继续运行"></a>mac锁屏后让程序继续运行</h2><p>在日常工作中，我们经常需要使用计算机进行各种操作。但是，有时候我们需要离开电脑，或者需要让电脑保持活跃状态，以便程序继续运行。在这种情况下，我们可以使用一些技巧来让mac锁屏后让程序继续运行。</p><h2 id="使用caffeine"><a href="#使用caffeine" class="headerlink" title="使用caffeine"></a>使用caffeine</h2><p>caffeine是一款mac上的小工具，可以让电脑保持活跃状态，防止锁屏和休眠。使用caffeine非常简单，只需要在应用程序中找到caffeine，然后点击它的图标即可。此时，电脑就会保持活跃状态，不会锁屏或休眠。当你需要让电脑恢复正常状态时，只需要再次点击caffeine的图标即可。</p><h2 id="使用命令行"><a href="#使用命令行" class="headerlink" title="使用命令行"></a>使用命令行</h2><p>除了使用caffeine，我们还可以通过命令行来让mac保持活跃状态。具体操作步骤如下：</p><ol><li><p>打开终端应用程序。</p></li><li><p>输入以下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">caffeinate -s<br></code></pre></td></tr></table></figure></li><li><p>按下回车键，电脑就会开始保持活跃状态，不会锁屏或休眠。</p></li><li><p>当你需要让电脑恢复正常状态时，只需要按下ctrl+c键即可。</p></li></ol><p>使用自带的屏幕保护程序<br>除了上述方法，还可以使用mac自带的屏幕保护程序来让电脑保持活跃状态。具体操作步骤如下：</p><ol><li><p>打开系统偏好设置，进入“桌面与屏幕保护”选项。</p></li><li><p>在屏幕保护选项卡中选择“漫游屏幕保护”。</p></li><li><p>点击“屏幕保护选项”，在弹出的窗口中选择“防止计算机进入睡眠模式”。</p></li><li><p>点击“确定”按钮，然后关闭偏好设置窗口。</p></li></ol><p>此时，电脑就会保持活跃状态，不会锁屏或休眠。当你需要让电脑恢复正常状态时，只需要关闭屏幕保护程序即可。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>其他</category>
+      
+      <category>[object Object]</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2023/10/26/hello-world/"/>
     <url>/2023/10/26/hello-world/</url>
