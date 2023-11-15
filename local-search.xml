@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>文件恢复</title>
+    <link href="/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/"/>
+    <url>/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Windows上如何恢复误删的文件"><a href="#Windows上如何恢复误删的文件" class="headerlink" title="Windows上如何恢复误删的文件"></a>Windows上如何恢复误删的文件</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>当你不小心误删了你的某些文件，并且没有备份，回收站也清空了。这个时候你可能会去找到处搜索安装一些文件恢复之类的软件，当然这也能解决你的问题，在这里提供一种微软官方的工具方便恢复你的数据。</p><ol><li><p>首先可能你的系统可能由于错误或者病毒攻击或者人为因素从而将你的文件隐藏了，可以使用<a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/attrib">attrib</a>命令将其恢复</p><blockquote><p>注意：如果文件丢失的话，则<strong>attrib</strong>命令并不起作用。可以忽略第一步。</p></blockquote><p> 例如：以管理员方式打开cmd输入下列命令<br> 该命令恢复G盘中所有隐藏的文件,命令的具体说明见:<a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/attrib">attrib</a></p> <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">attrib <span class="hljs-literal">-h</span> <span class="hljs-literal">-r</span> <span class="hljs-literal">-s</span> /s /d G:\*.*<br></code></pre></td></tr></table></figure><blockquote><p>-h 清除隐藏文件属性。<br>-r 清除只读文件属性。<br>-s 清除系统文件属性。<br>&#x2F;s 将attrib和任何命令行选项应用于当前目录及其所有子目录中的匹配文件。<br>&#x2F;d 将属性和任何命令行选项应用于目录。</p></blockquote></li><li><p>使用微软官方工具恢复你误删的文件<br> 微软官方工具地址 <a href="https://apps.microsoft.com/detail/9N26S50LN705?hl=en-us&gl=US#activetab=pivot:overviewtab">Windows File Recovery</a></p><p> Windows File Recovery是微软的一款命令行应用程序，没有图形用户界面。此程序仅适用 Windows 10 2004及更高版本。</p><p> 在Windows文件系统中，我们通常将被删除文件所在的空间视为空闲空间。如果你想 使用 Windows File Recovery 来恢复丢失的文件，请避免使用你的电脑，防止数据被覆盖，以增加恢复删除文件和文件夹的可能。因为如果可用空间已被新数据覆盖，则无法找回。该实用程序有4种模式：Regular、Extensive、Segment和Signature。</p><blockquote><p>✍ 注意：<br>✬ 基本命令格式：winfr source drive: destination drive: [&#x2F;mode [&#x2F;switches]（winfr 源驱动器：目标驱动器：[&#x2F;模式] [&#x2F;开关]<br>✬ 目标驱动器和源驱动器不能相同。<br>✬ 检查文件系统：单击进入“此电脑” &gt; 右键单击丢失文件的源驱动器 &gt; 点击“属性”。</p></blockquote></li><li></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>其他</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>制作WinPE</title>
     <link href="/2023/11/14/image/winpe-build/"/>
     <url>/2023/11/14/image/winpe-build/</url>
