@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>linux系统开机启动流程</title>
+    <link href="/2023/11/17/cloud-computing-service/linux-system-boot/"/>
+    <url>/2023/11/17/cloud-computing-service/linux-system-boot/</url>
+    
+    <content type="html"><![CDATA[<h2 id="linux系统开机启动流程"><a href="#linux系统开机启动流程" class="headerlink" title="linux系统开机启动流程"></a><a href="https://blog.csdn.net/qq_51010919/article/details/131465536">linux系统开机启动流程</a></h2><h3 id="开机详细流程概览"><a href="#开机详细流程概览" class="headerlink" title="开机详细流程概览"></a>开机详细流程概览</h3><ol><li>power on 开机</li><li>POST 开机自检</li><li>BIOS&#x2F;UEFI 硬件检查</li><li>Boot 检查启动顺序</li><li>hard disk 硬盘</li><li>MBR 引导分区 或者GPT分区</li><li>grub2 引导程序</li><li>加载&#x2F;boot中ext4文件系统驱动</li><li>load kernel 加载内核文件vmlinuz initramfs到内存</li><li>systemd 启动第一个进程</li><li>启动对应运行级别服务</li><li>mutil-user &#x2F;etc&#x2F;rc.local  &#x2F;etc&#x2F;fstab开机自动挂载file system</li><li>login 登入</li><li>根据&#x2F;etc&#x2F;passwd和&#x2F;etc&#x2F;shadow检测用户名和密码是否正确</li><li>初始化用户级别环境变量 ~&#x2F;.bashrc ~&#x2F;.bash_profile &#x2F;etc&#x2F;bashrc &#x2F;etc&#x2F;profile</li><li>bash提示</li></ol><h3 id="步骤解释"><a href="#步骤解释" class="headerlink" title="步骤解释"></a>步骤解释</h3><ol><li><p>POST(power-on Self-Test) 开机自检<br> 主板是所有硬件的载体，声卡、显卡、网卡所有的硬件之间的传输都靠主板传输数据。主板中有个BIOS程序会完成自检工作<br> 主要检测 cpu、内存、显示器适配器、键盘、鼠标、硬盘、可启动设备、引导加载程序bootloader初始化<br> 一旦完成自检后，会把程序交给引导加载程序</p></li><li><p>BIOS是固化在主板上ROM芯片上的程序<br> 如何进入BIOS系统</p><ul><li>台式机： 开机按 delete键</li><li>服务器： 开机有提醒，按照提醒操作</li><li>笔记本： F1 ～ F12等</li></ul><p> UEFI： UEFI的出现是为了取代传统的BIOS</p></li><li><p>Boot引导顺序，一般BIOS会提供多种引导系统的顺序</p><ul><li>hard drive 硬盘， 通过硬盘去启动引导程序</li><li>cd-raw 光驱，通过光驱去启动引导程序</li><li>removable device 可移动设备</li><li>network 从网络中启动</li></ul></li><li><p>MBR&#x2F;GPT 主引导分区快 内部包含引导加载程序，<br> MBR缺点不支持容量大于2T的硬盘<br> GPT最大支持18EB的硬盘，是基于UEFI使用的磁盘分区架构</p><p> 目前BIOS只支持MBR引导系统，UEFI可以支持GPT和MBR</p><p> linux可以使用以下命令查看是否是MBR分区还是GPT分区</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">parted -l<br></code></pre></td></tr></table></figure><p> <img src="/img/article/cloud-compute/system-boot-bios-mbr.png" alt="parted -l"></p><p> partition table如何输出GPT则表示是GPT分区；如果输出是msdos则表示MBR</p></li><li><p>grub2 引导装载程序 ，会负责选择要启动的操作系统、加载内核文件并传递参数</p><ul><li>提供启动菜单：grub2在计算机启动时会列出可用的操作系统和内核选项</li><li>加载系统内核：加载内核文件（eg：vmlinuz）到内存中</li><li>加载初始RAM磁盘映像initramfs：initramfs中包含引导系统的必要文件和驱动程序</li><li>启动操作系统：当内核和initramfs加载后，会在内存中形成一个临时的根文件系统，grub2将机器控制权交给内核，然后进行操作系统的初始化</li><li>提供启动参数：grub2可以设置内核参数、运行级别等</li><li>提供多重引导：用户可以轻松切换不同操作系统。</li></ul></li><li><p>systemd 是一种初始化系统的程序，负责引导过程中启动各个服务和进程，并管理系统的运行状态。<br> 其作用包含以下几个方面：</p><ul><li>引导管理：硬件初始化、文件系统挂载、设备驱动加载</li><li>服务管理： 各个服务的启动停止状态监控等</li><li>并行启动：支持并行启动互不依赖的服务，加快系统启动速度</li><li>日志管理：journald日志系统</li><li>用户会话管理：</li></ul></li><li></li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何恢复误删的文件</title>
     <link href="/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/"/>
     <url>/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/</url>
