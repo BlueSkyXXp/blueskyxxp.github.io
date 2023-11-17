@@ -111,3 +111,12 @@ deploy:
   repository: 'https://github.com/BlueSkyXXp/blueskyxxp.github.io.git'
   branch: main
   token: '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'
+
+
+# Mermaid tag
+mermaid:
+  enable: true # 此处修改为true！！！
+  # Available themes: default | dark | forest | neutral
+  theme:
+    light: default
+    dark: dark
