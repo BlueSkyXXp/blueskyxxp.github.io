@@ -1,16 +1,13 @@
----
-title: about
-date: 2023-05-01 01:03:06
-layout: about
+title: "About"
+layout: "page"
 ---
 
-### 几个好用的chatGPT大模型
+## 推荐几个好用的大模型
 
 [百度文心一言](https://yiyan.baidu.com/)
 [昆山万维的天工](https://neice.tiangong.cn/interlocutionPage)
 [huggingChat](https://huggingface.co/chat/)
 [科大讯飞星火大模型](https://xinghuo.xfyun.cn/desk)
-
 
 huggingChat是一个基于300亿参数的开源模型，其是[基于Meta的LLamA-30B微调的模型](https://github.com/LAION-AI/Open-Assistant)
 
