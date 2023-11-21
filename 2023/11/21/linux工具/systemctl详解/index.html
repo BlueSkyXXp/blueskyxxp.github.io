@@ -3,17 +3,21 @@
 <head>
     <meta charset="utf-8">
     
-    <title>博客</title>
+    <title>systemctl详解 | 博客</title>
     
     
-        <meta name="keywords" content="博客" />
+        <meta name="keywords" content="systemctl详解" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="简介 systemctl是一个systemd工具，负责控制systemd系统和服务管理。 工具的使用 systemd作为父守护进程运行（PID &#x3D; 1） 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859# 查看systemd进程信">
+<meta property="og:type" content="article">
+<meta property="og:title" content="systemctl详解">
+<meta property="og:url" content="http://example.com/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/index.html">
 <meta property="og:site_name" content="博客">
+<meta property="og:description" content="简介 systemctl是一个systemd工具，负责控制systemd系统和服务管理。 工具的使用 systemd作为父守护进程运行（PID &#x3D; 1） 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859# 查看systemd进程信">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-21T15:33:57.000Z">
+<meta property="article:modified_time" content="2023-11-21T16:13:56.655Z">
 <meta property="article:author" content="双月候鸟">
 <meta name="twitter:card" content="summary">
     
@@ -174,13 +178,13 @@
         
         
          <ul class="unstyled" id="tree" > 
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
                             linux工具
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/">systemctl详解</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/">systemctl详解</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -298,8 +302,7 @@
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
             
-            <section id="main">
-        <article id="post-linux工具/systemctl详解" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-linux工具/systemctl详解" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -341,8 +344,8 @@
                 
                 
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/">systemctl详解</a>
+        <h1 class="article-title" itemprop="name">
+            systemctl详解
         </h1>
     
 
@@ -353,38 +356,30 @@
         
         
             
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h2 id="简介">简介</h2>
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">工具的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">3.</span> <span class="toc-text">参考资料</span></a></li></ol>
+                </div>
+            
+        
+        
+            <h2 id="简介">简介</h2>
 <p>systemctl是一个systemd工具，负责控制systemd系统和服务管理。</p>
 <h2 id="工具的使用">工具的使用</h2>
 <p>systemd作为父守护进程运行（PID = 1）</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看systemd进程信息</span></span><br><span class="line">ps -eaf | grep systemd</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">重启系统</span></span><br><span class="line">systemctl reboot</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">关闭系统，切断电源</span></span><br><span class="line">systemctl poweroff</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">cpu停止工作</span></span><br><span class="line">systemctl halt</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">暂停系统</span></span><br><span class="line">systemctl suspend</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看系统启动耗时</span></span><br><span class="line">systemd-analyze</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-------</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">output is :</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Startup finished <span class="keyword">in</span> 2.900s (kernel) + 12.773s (userspace) = 15.674s</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">graphical.target reached after 12.761s <span class="keyword">in</span> userspace</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-------</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看每个服务的启动耗时</span></span><br><span class="line">systemd-analyze blame</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-------</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">output is :</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">        20.138s healthd2.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         7.812s casaos-local-storage.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         3.908s casaos-app-management.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         3.005s networking.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         1.251s user@1000.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         1.217s user@0.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         1.213s user@2000.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         1.105s casaos-user-service.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         1.095s nfs-server.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">          984ms casaos-message-bus.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">          791ms casaos-gateway.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">          775ms ifupdown-pre.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">          738ms casaos.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">          614ms apt-daily-upgrade.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">          565ms apt-daily.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">          493ms cloud-init-local.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">          423ms docker.service</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">                .....</span>                     </span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-------</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看启动的关键链接</span></span><br><span class="line">systemd-analyze  critical-chain</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">------</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">output is :</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">graphical.target @12.761s</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">└─multi-user.target @12.760s</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"> └─exim4.service @6.250s +350ms</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">   └─network-online.target @6.243s</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">     └─network.target @3.927s</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">       └─ifupdown-pre.service @463ms +775ms</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">         └─systemd-udev-trigger.service @370ms +89ms</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">           └─systemd-udevd-kernel.socket @368ms</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">             └─system.slice @332ms</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">               └─-.slice @332ms</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-------</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/#more">查看更多</a>
+<h2 id="参考资料">参考资料</h2>
+<blockquote>
+<ul class="lvl-1">
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3dd6b57a16bf">systemctl</a></p>
+</li>
+<li class="lvl-2">
+<p><a href></a></p>
+</li>
+</ul>
+</blockquote>
+
             </div>
         
         <footer class="article-footer">
@@ -393,599 +388,31 @@
 </article>
 
 
-
-
-
-
     
-        <article id="post-金融/stock相关逻辑" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E9%87%91%E8%9E%8D/">金融</a>
-    </div>
-
-                        
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/">
-            <time datetime="2023-11-20T17:25:14.000Z" itemprop="datePublished">2023-11-21</time>
+<nav id="article-nav">
+    
+    
+        <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">stock相关逻辑</div>
         </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/金融/stock相关逻辑.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/金融/stock相关逻辑.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/金融/stock相关逻辑.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/">stock相关逻辑</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h2 id="影响封板的原因探讨">影响封板的原因探讨</h2>
-<p>炸板的原因最直接的就是卖，卖得多了，封不住就炸了。一般来说，只要是涨停封死，卖的可能性就大大减小，那么为什么股票涨停了还会有人卖呢？有几个原因。</p>
-<ol>
-<li class="lvl-3">氛围当市场氛围好时（指的是题材股的氛围，而不是指数氛围，题材氛围与指数氛围有可能会出现错配），比如股灾，市场情绪极为恐慌，基本上全部炸板，其它板炸的可能性也很大。由于恐慌效应，我不卖你可能会卖，那我先卖为敬。这个时候看到有人卖，其它人一起卖，就产生卖出的一致性。当行情好的时候，就像行情进入疯牛时，哪怕逻辑不正也没问题，越有特色的越被顶起来。情绪涨潮时，辨识度个股吃面率小，即使吃到面，第二天也不会过分到再来一个大低开，很多时候资金会当成低吸的机会，氛围差了就一字一字往下炸。</li>
-<li class="lvl-3">逻辑当行情走成了主线时，龙头股有一大堆跟风股，大资金才不是傻子，大多数资金会锁仓，因为龙头股会有溢价。当行情没有走成主线时，整个板块力度不行，无论是龙头股还是前排跟风股明日可能没有太好的溢价，这个时候就容易炸板，大资金会抢跑。注意：</li>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
+</nav>
 
 
 
 
 
     
-        <article id="post-云计算/linux-system-boot" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/">云计算</a>
-    </div>
-
-                        
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/">
-            <time datetime="2023-11-17T07:25:00.000Z" itemprop="datePublished">2023-11-17</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/云计算/linux-system-boot.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/云计算/linux-system-boot.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/云计算/linux-system-boot.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/">linux系统开机启动流程</a>
-        </h1>
     
 
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h2 id="linux系统开机启动流程"><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_51010919/article/details/131465536">linux系统开机启动流程</a></h2>
-<h3 id="开机详细流程概览">开机详细流程概览</h3>
-<ol>
-<li class="lvl-3">
-<p>power on 开机</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
 
 
 
-
-
-
-    
-        <article id="post-others/文件恢复" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a>
-    </div>
-
-                        
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/">
-            <time datetime="2023-11-15T14:23:16.000Z" itemprop="datePublished">2023-11-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/others/文件恢复.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/others/文件恢复.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/others/文件恢复.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/">如何恢复误删的文件</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                <p>本文主要介绍如何在windows或者linux上恢复误删的文件方法。</p>
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-云计算/winpe-build" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E9%95%9C%E5%83%8F/">镜像</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E9%95%9C%E5%83%8F/" rel="tag">镜像</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/">
-            <time datetime="2023-11-14T07:55:42.000Z" itemprop="datePublished">2023-11-14</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/云计算/winpe-build.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/云计算/winpe-build.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/云计算/winpe-build.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/">制作WinPE</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                <p>Winpe镜像的制作。</p>
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-云计算/cloud-computing" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/">云计算</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/kvm/" rel="tag">kvm</a>, <a class="tag-link-link" href="/tags/linux/" rel="tag">linux</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/">
-            <time datetime="2023-11-10T19:37:17.000Z" itemprop="datePublished">2023-11-11</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/云计算/cloud-computing.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/云计算/cloud-computing.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/云计算/cloud-computing.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/">云计算kvm部署</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                <p>云计算</p>
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-others/mac锁屏后让程序继续运行" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a>
-    </div>
-
-                        
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/">
-            <time datetime="2023-10-27T09:01:45.000Z" itemprop="datePublished">2023-10-27</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/others/mac锁屏后让程序继续运行.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/others/mac锁屏后让程序继续运行.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/others/mac锁屏后让程序继续运行.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/">mac锁屏后如何让程序继续运行</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                <p>mac锁屏后如何让程序继续运行,让计算机保持活跃状态。</p>
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-金融/经济学相关概念" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E7%BB%8F%E6%B5%8E/">经济</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E9%87%91%E8%9E%8D/" rel="tag">金融</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2023/05/10/%E9%87%91%E8%9E%8D/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/">
-            <time datetime="2023-05-09T17:10:03.000Z" itemprop="datePublished">2023-05-10</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/金融/经济学相关概念.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/金融/经济学相关概念.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/金融/经济学相关概念.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2023/05/10/%E9%87%91%E8%9E%8D/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/">经济相关概念和知识--(1)</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                <p>该文介绍了经济相关的一些概念。</p>
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2023/05/10/%E9%87%91%E8%9E%8D/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
 </section>
         </div>
         <footer id="footer">
