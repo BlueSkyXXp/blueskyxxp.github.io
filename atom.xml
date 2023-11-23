@@ -135,9 +135,9 @@
     <link href="http://example.com/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/"/>
     <id>http://example.com/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/</id>
     <published>2023-11-10T19:37:17.000Z</published>
-    <updated>2023-11-21T03:23:56.956Z</updated>
+    <updated>2023-11-23T10:26:55.248Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/434275145">kvm的部署</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="参考资料">参考资料</h2><blockquote><ul class="lvl-1"><li class="lvl-2"><a href="https://zhuanlan.zhihu.com/p/434275145">kvm的部署</a></li><li class="lvl-2"><a href="https://blog.csdn.net/qq_61116007/article/details/130682817?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-130682817-blog-128858241.235%5Ev38%5Epc_relevant_anti_vip&amp;spm=1001.2101.3001.4242.1&amp;utm_relevant_index=3">kvm存储池、存储卷</a></li></ul></blockquote>]]></content>
     
     
     <summary type="html">云计算</summary>
