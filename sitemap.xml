@@ -165,14 +165,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E7%BB%8F%E6%B5%8E/</loc>
+    <loc>http://example.com/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2023-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <loc>http://example.com/categories/%E7%BB%8F%E6%B5%8E/</loc>
     <lastmod>2023-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
