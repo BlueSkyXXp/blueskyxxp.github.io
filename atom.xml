@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-21T16:35:44.545Z</updated>
+  <updated>2023-11-24T14:10:23.200Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何搭建代理访问谷歌</title>
+    <link href="http://example.com/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/"/>
+    <id>http://example.com/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/</id>
+    <published>2023-11-24T14:09:54.000Z</published>
+    <updated>2023-11-24T14:10:23.200Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://haoyunlaile.github.io/2020/docker/docker-install-shadowsocks-libev/">https://haoyunlaile.github.io/2020/docker/docker-install-shadowsocks-libev/</a></p><h2 id="参考资料">参考资料</h2><blockquote><ul class="lvl-1"><li class="lvl-2"><p><a href="https://haoyunlaile.github.io/2020/docker/docker-install-shadowsocks-libev/">sshadowsocks搭建</a></p></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://haoyunlaile.github.io/2020/docker/docker-install-shadowsocks-libev/&quot;&gt;https://haoyunlaile.github.io/2020/docker/docker-in</summary>
+      
+    
+    
+    
+    <category term="others" scheme="http://example.com/categories/others/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>systemctl详解</title>
