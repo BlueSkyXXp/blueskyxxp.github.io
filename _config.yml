@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://blueskyxxp.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -99,7 +99,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: maupassant
-theme: Wikitten
+theme: gal
 
 encrypt:
   enable: true
@@ -110,7 +110,7 @@ deploy:
   type: git
   repository: 'https://github.com/BlueSkyXXp/blueskyxxp.github.io.git'
   branch: main
-  token: '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'
+  token: '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'
 
 
 markdown:
@@ -159,3 +159,25 @@ markdown:
 math:
   enable: true
   engine: mathjax
+
+jsonContent:
+  dateFormat: MM-DD
+  pages:
+    title: true
+    text: true
+    path: true
+    date: true
+    excerpt: true
+    preview: true
+  posts:
+    title: true
+    text: true
+    path: true
+    date: true
+    excerpt: true
+    tags: [{
+      name: tag.name,
+      slug: tag.slug,
+      permalink: tag.permalink
+    }]
+    preview: true
