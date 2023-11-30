@@ -1,3 +1,4 @@
+http://example.com/2023/11/30/%E4%BA%91%E8%AE%A1%E7%AE%97/vpc/
 http://example.com/2023/11/30/%E5%BB%BA%E7%AB%99/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8wordpress%E5%BB%BA%E8%AE%BE%E4%B8%80%E4%B8%AA%E7%AB%99%E7%82%B9/
 http://example.com/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/
 http://example.com/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/
@@ -18,11 +19,11 @@ http://example.com/tags/linux/
 http://example.com/tags/kvm/
 http://example.com/tags/%E9%95%9C%E5%83%8F/
 http://example.com/tags/%E9%87%91%E8%9E%8D/
-http://example.com/categories/%E5%85%B6%E4%BB%96/
 http://example.com/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/
 http://example.com/categories/%E9%95%9C%E5%83%8F/
 http://example.com/categories/%E7%BB%8F%E6%B5%8E/
-http://example.com/categories/others/
-http://example.com/categories/%E5%BB%BA%E7%AB%99/
+http://example.com/categories/%E5%85%B6%E4%BB%96/
 http://example.com/categories/linux%E5%B7%A5%E5%85%B7/
 http://example.com/categories/%E9%87%91%E8%9E%8D/
+http://example.com/categories/%E5%BB%BA%E7%AB%99/
+http://example.com/categories/others/
