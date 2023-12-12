@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-12-12T16:14:46.631Z</updated>
+  <updated>2023-12-12T18:35:01.375Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文件恢复软件</title>
+    <link href="http://example.com/2023/12/13/%E5%B7%A5%E5%85%B7/file_reco/"/>
+    <id>http://example.com/2023/12/13/%E5%B7%A5%E5%85%B7/file_reco/</id>
+    <published>2023-12-12T17:33:36.000Z</published>
+    <updated>2023-12-12T18:35:01.375Z</updated>
+    
+    <content type="html"><![CDATA[<p>文件恢复软件<br><a href="https://www.yzzpan.com/#sharefile=irSVmtv2_2729655">https://www.yzzpan.com/#sharefile=irSVmtv2_2729655</a></p><p><a href="https://www.cleverfiles.com/data-recovery-software.html">https://www.cleverfiles.com/data-recovery-software.html</a></p><p><a href="https://www.cgsecurity.org/wiki/TestDisk">https://www.cgsecurity.org/wiki/TestDisk</a></p><p><a href="https://www.cgsecurity.org/wiki/PhotoRec">https://www.cgsecurity.org/wiki/PhotoRec</a></p><p><a href="https://pc-inspector-file-recovery.en.softonic.com/">https://pc-inspector-file-recovery.en.softonic.com/</a></p><h2 id="参考资料">参考资料</h2><blockquote><ul class="lvl-1"><li class="lvl-2"><p><a href="https://www.cleverfiles.com/data-recovery-software.html"></a></p></li><li class="lvl-2"><p><a href="https://www.yzzpan.com/#sharefile=irSVmtv2_2729655"></a></p></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;文件恢复软件&lt;br&gt;
+&lt;a href=&quot;https://www.yzzpan.com/#sharefile=irSVmtv2_2729655&quot;&gt;https://www.yzzpan.com/#sharefile=irSVmtv2_2729655&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a </summary>
+      
+    
+    
+    
+    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>国内比较好用的winpe工具分享</title>
