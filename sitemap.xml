@@ -231,6 +231,13 @@
   </url>
   
   <url>
+    <loc>https://blueskyxxp.github.io/categories/linux%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2023-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blueskyxxp.github.io/categories/others/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -253,13 +260,6 @@
   
   <url>
     <loc>https://blueskyxxp.github.io/categories/%E9%87%91%E8%9E%8D/</loc>
-    <lastmod>2023-12-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blueskyxxp.github.io/categories/linux%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
