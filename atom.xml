@@ -3,11 +3,11 @@
   <title>博客</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://blueskyxxp.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://blueskyxxp.github.io/"/>
   <updated>2023-12-12T18:35:01.375Z</updated>
-  <id>http://example.com/</id>
+  <id>https://blueskyxxp.github.io/</id>
   
   <author>
     <name>双月候鸟</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>文件恢复软件</title>
-    <link href="http://example.com/2023/12/13/%E5%B7%A5%E5%85%B7/file_reco/"/>
-    <id>http://example.com/2023/12/13/%E5%B7%A5%E5%85%B7/file_reco/</id>
+    <link href="https://blueskyxxp.github.io/2023/12/13/%E5%B7%A5%E5%85%B7/file_reco/"/>
+    <id>https://blueskyxxp.github.io/2023/12/13/%E5%B7%A5%E5%85%B7/file_reco/</id>
     <published>2023-12-12T17:33:36.000Z</published>
     <updated>2023-12-12T18:35:01.375Z</updated>
     
@@ -35,15 +35,15 @@
     
     
     
-    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://blueskyxxp.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>国内比较好用的winpe工具分享</title>
-    <link href="http://example.com/2023/12/13/%E5%B7%A5%E5%85%B7/winpe_tool/"/>
-    <id>http://example.com/2023/12/13/%E5%B7%A5%E5%85%B7/winpe_tool/</id>
+    <link href="https://blueskyxxp.github.io/2023/12/13/%E5%B7%A5%E5%85%B7/winpe_tool/"/>
+    <id>https://blueskyxxp.github.io/2023/12/13/%E5%B7%A5%E5%85%B7/winpe_tool/</id>
     <published>2023-12-12T16:14:46.000Z</published>
     <updated>2023-12-19T14:46:19.668Z</updated>
     
@@ -62,15 +62,15 @@
     
     
     
-    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://blueskyxxp.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>详细了解各种云上vpc的原理</title>
-    <link href="http://example.com/2023/11/30/%E4%BA%91%E8%AE%A1%E7%AE%97/vpc/"/>
-    <id>http://example.com/2023/11/30/%E4%BA%91%E8%AE%A1%E7%AE%97/vpc/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/30/%E4%BA%91%E8%AE%A1%E7%AE%97/vpc/"/>
+    <id>https://blueskyxxp.github.io/2023/11/30/%E4%BA%91%E8%AE%A1%E7%AE%97/vpc/</id>
     <published>2023-11-30T13:12:48.000Z</published>
     <updated>2023-11-30T13:13:09.616Z</updated>
     
@@ -88,15 +88,15 @@
     
     
     
-    <category term="云计算" scheme="http://example.com/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="云计算" scheme="https://blueskyxxp.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
     
   </entry>
   
   <entry>
     <title>如何快速使用wordpress建设一个站点</title>
-    <link href="http://example.com/2023/11/30/%E5%BB%BA%E7%AB%99/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8wordpress%E5%BB%BA%E8%AE%BE%E4%B8%80%E4%B8%AA%E7%AB%99%E7%82%B9/"/>
-    <id>http://example.com/2023/11/30/%E5%BB%BA%E7%AB%99/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8wordpress%E5%BB%BA%E8%AE%BE%E4%B8%80%E4%B8%AA%E7%AB%99%E7%82%B9/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/30/%E5%BB%BA%E7%AB%99/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8wordpress%E5%BB%BA%E8%AE%BE%E4%B8%80%E4%B8%AA%E7%AB%99%E7%82%B9/"/>
+    <id>https://blueskyxxp.github.io/2023/11/30/%E5%BB%BA%E7%AB%99/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8wordpress%E5%BB%BA%E8%AE%BE%E4%B8%80%E4%B8%AA%E7%AB%99%E7%82%B9/</id>
     <published>2023-11-30T07:17:20.000Z</published>
     <updated>2023-11-30T07:21:16.035Z</updated>
     
@@ -110,15 +110,15 @@
     
     
     
-    <category term="建站" scheme="http://example.com/categories/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://blueskyxxp.github.io/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
   </entry>
   
   <entry>
     <title>如何搭建代理访问谷歌</title>
-    <link href="http://example.com/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/"/>
-    <id>http://example.com/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/"/>
+    <id>https://blueskyxxp.github.io/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/</id>
     <published>2023-11-24T14:09:54.000Z</published>
     <updated>2023-11-24T14:10:23.200Z</updated>
     
@@ -132,15 +132,15 @@
     
     
     
-    <category term="others" scheme="http://example.com/categories/others/"/>
+    <category term="others" scheme="https://blueskyxxp.github.io/categories/others/"/>
     
     
   </entry>
   
   <entry>
     <title>systemctl详解</title>
-    <link href="http://example.com/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://example.com/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://blueskyxxp.github.io/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/</id>
     <published>2023-11-21T15:33:57.000Z</published>
     <updated>2023-11-21T16:35:44.545Z</updated>
     
@@ -158,15 +158,15 @@
     
     
     
-    <category term="linux工具" scheme="http://example.com/categories/linux%E5%B7%A5%E5%85%B7/"/>
+    <category term="linux工具" scheme="https://blueskyxxp.github.io/categories/linux%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>stock相关逻辑</title>
-    <link href="http://example.com/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/"/>
-    <id>http://example.com/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/"/>
+    <id>https://blueskyxxp.github.io/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/</id>
     <published>2023-11-20T17:25:14.000Z</published>
     <updated>2023-11-21T03:23:34.145Z</updated>
     
@@ -183,15 +183,15 @@
     
     
     
-    <category term="金融" scheme="http://example.com/categories/%E9%87%91%E8%9E%8D/"/>
+    <category term="金融" scheme="https://blueskyxxp.github.io/categories/%E9%87%91%E8%9E%8D/"/>
     
     
   </entry>
   
   <entry>
     <title>linux系统开机启动流程</title>
-    <link href="http://example.com/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/"/>
-    <id>http://example.com/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/"/>
+    <id>https://blueskyxxp.github.io/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/</id>
     <published>2023-11-17T07:25:00.000Z</published>
     <updated>2023-11-18T07:32:09.857Z</updated>
     
@@ -206,15 +206,15 @@
     
     
     
-    <category term="云计算" scheme="http://example.com/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="云计算" scheme="https://blueskyxxp.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
     
   </entry>
   
   <entry>
     <title>如何恢复误删的文件</title>
-    <link href="http://example.com/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/"/>
-    <id>http://example.com/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/"/>
+    <id>https://blueskyxxp.github.io/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/</id>
     <published>2023-11-15T14:23:16.000Z</published>
     <updated>2023-11-18T19:24:23.121Z</updated>
     
@@ -225,15 +225,15 @@
     
     
     
-    <category term="其他" scheme="http://example.com/categories/%E5%85%B6%E4%BB%96/"/>
+    <category term="其他" scheme="https://blueskyxxp.github.io/categories/%E5%85%B6%E4%BB%96/"/>
     
     
   </entry>
   
   <entry>
     <title>制作WinPE</title>
-    <link href="http://example.com/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/"/>
-    <id>http://example.com/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/"/>
+    <id>https://blueskyxxp.github.io/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/</id>
     <published>2023-11-14T07:55:42.000Z</published>
     <updated>2023-11-18T19:41:19.769Z</updated>
     
@@ -244,17 +244,17 @@
     
     
     
-    <category term="镜像" scheme="http://example.com/categories/%E9%95%9C%E5%83%8F/"/>
+    <category term="镜像" scheme="https://blueskyxxp.github.io/categories/%E9%95%9C%E5%83%8F/"/>
     
     
-    <category term="镜像" scheme="http://example.com/tags/%E9%95%9C%E5%83%8F/"/>
+    <category term="镜像" scheme="https://blueskyxxp.github.io/tags/%E9%95%9C%E5%83%8F/"/>
     
   </entry>
   
   <entry>
     <title>云计算kvm部署</title>
-    <link href="http://example.com/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/"/>
-    <id>http://example.com/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/</id>
+    <link href="https://blueskyxxp.github.io/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/"/>
+    <id>https://blueskyxxp.github.io/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/</id>
     <published>2023-11-10T19:37:17.000Z</published>
     <updated>2023-11-23T10:26:55.248Z</updated>
     
@@ -265,19 +265,19 @@
     
     
     
-    <category term="云计算" scheme="http://example.com/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="云计算" scheme="https://blueskyxxp.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="linux" scheme="http://example.com/tags/linux/"/>
+    <category term="linux" scheme="https://blueskyxxp.github.io/tags/linux/"/>
     
-    <category term="kvm" scheme="http://example.com/tags/kvm/"/>
+    <category term="kvm" scheme="https://blueskyxxp.github.io/tags/kvm/"/>
     
   </entry>
   
   <entry>
     <title>mac锁屏后如何让程序继续运行</title>
-    <link href="http://example.com/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/"/>
-    <id>http://example.com/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/</id>
+    <link href="https://blueskyxxp.github.io/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/"/>
+    <id>https://blueskyxxp.github.io/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/</id>
     <published>2023-10-27T09:01:45.000Z</published>
     <updated>2023-11-18T19:18:07.540Z</updated>
     
@@ -288,15 +288,15 @@
     
     
     
-    <category term="其他" scheme="http://example.com/categories/%E5%85%B6%E4%BB%96/"/>
+    <category term="其他" scheme="https://blueskyxxp.github.io/categories/%E5%85%B6%E4%BB%96/"/>
     
     
   </entry>
   
   <entry>
     <title>经济相关概念和知识--(1)</title>
-    <link href="http://example.com/2023/05/10/%E9%87%91%E8%9E%8D/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/"/>
-    <id>http://example.com/2023/05/10/%E9%87%91%E8%9E%8D/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</id>
+    <link href="https://blueskyxxp.github.io/2023/05/10/%E9%87%91%E8%9E%8D/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/"/>
+    <id>https://blueskyxxp.github.io/2023/05/10/%E9%87%91%E8%9E%8D/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</id>
     <published>2023-05-09T17:10:03.000Z</published>
     <updated>2023-11-19T05:54:45.325Z</updated>
     
@@ -307,10 +307,10 @@
     
     
     
-    <category term="经济" scheme="http://example.com/categories/%E7%BB%8F%E6%B5%8E/"/>
+    <category term="经济" scheme="https://blueskyxxp.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
     
     
-    <category term="金融" scheme="http://example.com/tags/%E9%87%91%E8%9E%8D/"/>
+    <category term="金融" scheme="https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/"/>
     
   </entry>
   
