@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blueskyxxp.github.io/guestbook/index.html</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blueskyxxp.github.io/about/index.html</loc>
     
     <lastmod>2023-12-20</lastmod>
@@ -173,6 +182,13 @@
 
   
   <url>
+    <loc>https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/</loc>
+    <lastmod>2023-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blueskyxxp.github.io/tags/linux/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -193,14 +209,14 @@
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/</loc>
+    <loc>https://blueskyxxp.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
-  
-
   
   <url>
     <loc>https://blueskyxxp.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
@@ -224,14 +240,14 @@
   </url>
   
   <url>
-    <loc>https://blueskyxxp.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
+    <loc>https://blueskyxxp.github.io/categories/linux%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blueskyxxp.github.io/categories/linux%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://blueskyxxp.github.io/categories/others/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -253,13 +269,6 @@
   
   <url>
     <loc>https://blueskyxxp.github.io/categories/%E9%87%91%E8%9E%8D/</loc>
-    <lastmod>2023-12-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blueskyxxp.github.io/categories/others/</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
