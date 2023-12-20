@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="双月候鸟">
+    
+    
+    
+    
+    
+    
+    <title>stock相关逻辑 | 博客</title>
+    <link href="http://example.com" rel="prefetch" />
+
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/js/jquery.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="博客" type="application/atom+xml">
+</head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="http://example.com">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">博客</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/%E5%85%B6%E4%BB%96/">其他</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/">云计算</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E9%95%9C%E5%83%8F/">镜像</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/categories">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/linux/">linux</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/kvm/">kvm</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/%E9%95%9C%E5%83%8F/">镜像</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://example.com">博客</a>
+        >
+        <span>stock相关逻辑</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/">stock相关逻辑</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2023-11-21
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/">stock相关逻辑</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2023-11-21
+            </p>
+            <p>
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h2 id="影响封板的原因探讨">影响封板的原因探讨</h2>
+<p>炸板的原因最直接的就是卖，卖得多了，封不住就炸了。一般来说，只要是涨停封死，卖的可能性就大大减小，那么为什么股票涨停了还会有人卖呢？有几个原因。</p>
+<ol>
+<li class="lvl-3">氛围当市场氛围好时（指的是题材股的氛围，而不是指数氛围，题材氛围与指数氛围有可能会出现错配），比如股灾，市场情绪极为恐慌，基本上全部炸板，其它板炸的可能性也很大。由于恐慌效应，我不卖你可能会卖，那我先卖为敬。这个时候看到有人卖，其它人一起卖，就产生卖出的一致性。当行情好的时候，就像行情进入疯牛时，哪怕逻辑不正也没问题，越有特色的越被顶起来。情绪涨潮时，辨识度个股吃面率小，即使吃到面，第二天也不会过分到再来一个大低开，很多时候资金会当成低吸的机会，氛围差了就一字一字往下炸。</li>
+<li class="lvl-3">逻辑当行情走成了主线时，龙头股有一大堆跟风股，大资金才不是傻子，大多数资金会锁仓，因为龙头股会有溢价。当行情没有走成主线时，整个板块力度不行，无论是龙头股还是前排跟风股明日可能没有太好的溢价，这个时候就容易炸板，大资金会抢跑。注意：</li>
+</ol>
+<ul class="lvl-0">
+<li class="lvl-2">当这个逻辑被认可，而且带起了大量的跟风时，此时龙头股第二天缩量也是合理的，量这个东西得具体分析。某个逻辑不被市场许可，放量是一定的。但被市场认可还放量，原因比较多，也有可能是资金不认同股票的逻辑等等。</li>
+<li class="lvl-2">封单的量不是最重要的，个股的逻辑是否被市场认可才是最重要的，因为封单的量永远都小于流通盘，逻辑不被认可，封单量就是纸老虎。</li>
+</ul>
+<ol start="3">
+<li class="lvl-3">题材周期阶段题材会经历启动→发酵→一致→分歧等阶段。买在后面的阶段，炸板的概率越大。不多分析了。</li>
+<li class="lvl-3">个股地位按照分类可以分为，主线龙头、主线跟风，支线龙头、支线跟风、独立人气股。主线龙头的人气肯定是有保证的，剩下的其它股票炸不炸就看资金的认可度了，就是说看命了。当然，如果主线龙头买不到，买到的全是面，说明市场的整体情绪出了问题。</li>
+<li class="lvl-3">个股阶段——避开个股缩量加速阶段个股所处阶段与题材周期阶段还有所区别，涉及的更多的是涨停的形式，比方说是缩量一字、放量一字、放量涨停等形式，然后结合个股的位置，题材的阶段。当然，从健康角度来说，肯定是放量的更健康，本质上那种缩量一字是资金吃独食，让别人抬轿子的耍流氓行为。但是这个问题还得具体结合市场氛围来看，比方说在炒作情绪好的时候，现在的龙头战法就跟功夫里面的《如来神掌》一样人手一本，大家都认识，好嘛就是根本就是没有机会上车，这个时候不放量意味着对龙头股的认同，这个时候再放量烂板，那可能就是个股有问题了。换手率健康也会出问题，比方说明明封单足够，本来好端端的可以拿到明天，但是尾盘某些资金还是要抢跑，这种情况就是上面所说的氛围阶段那几条了。另外，里面的大资金害怕明天出货困难，趁着今天人气好的时候卖。这也是我们看到很多个股尾盘出现放量的原因，每个资金因为资金量、安全性等方面的考虑，会选择“卖在一致”，行情一致时容易出货。</li>
+</ol>
+<hr>
+<p>股票这个行业的门槛比较低，绝大多数普通交易者对股票的认识都处于相对比较低的层次，即以涨跌论股票，比如“我买的XX涨了”，“你买的XX股票涨了多少？”，“这支股票最近涨得不错”，“我的股票涨停了”，“你买了些啥，买的不对”等等言语，这种水平代表了绝大多数普通交易者的水平，如果脑子中全是这种想法，思路往往打不开。职业交易者更在意的是涨跌的概率而非涨跌，也就是股票有多大“概率”会上涨，多大概率会下跌？这样在职业玩家的眼中，个股涨跌的问题变成了个股涨跌的概率问题。如果把个股涨跌的视角切换到胜率的视角，从超短票的意义来说，我们看到的就不是个股涨了多少跌了多少，而是个股涨停封死以及炸板的概率（或者说胜率）是多少。这样我们在看到某支股票时候，脑子里面最先冒出的是胜率而不是涨跌。</p>
+<h2 id="参考资料">参考资料</h2>
+<blockquote>
+<ul class="lvl-1">
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3xY1PZ0fzQMwMKrJ4GMfSw"></a></p>
+</li>
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/DZ3DlFYL-XjHSfKtD9dn6g"></a></p>
+</li>
+</ul>
+</blockquote>
+
+    </div>
+</article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'stock相关逻辑'
+    }
+</script>
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            双月候鸟
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/12/13/%E5%B7%A5%E5%85%B7/file_reco/">文件恢复软件</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/12/13/%E5%B7%A5%E5%85%B7/winpe_tool/">国内比较好用的winpe工具分享</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/30/%E4%BA%91%E8%AE%A1%E7%AE%97/vpc/">详细了解各种云上vpc的原理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/30/%E5%BB%BA%E7%AB%99/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8wordpress%E5%BB%BA%E8%AE%BE%E4%B8%80%E4%B8%AA%E7%AB%99%E7%82%B9/">如何快速使用wordpress建设一个站点</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/">如何搭建代理访问谷歌</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/">systemctl详解</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/">stock相关逻辑</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/">linux系统开机启动流程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/15/others/%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/">如何恢复误删的文件</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/">制作WinPE</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/">mac锁屏后如何让程序继续运行</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/">如何搭建代理访问谷歌</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/">systemctl详解</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/11/%E4%BA%91%E8%AE%A1%E7%AE%97/cloud-computing/">云计算kvm部署</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system-boot/">linux系统开机启动流程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/">制作WinPE</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/12/13/%E5%B7%A5%E5%85%B7/file_reco/">文件恢复软件</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/12/13/%E5%B7%A5%E5%85%B7/winpe_tool/">国内比较好用的winpe工具分享</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/30/%E5%BB%BA%E7%AB%99/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8wordpress%E5%BB%BA%E8%AE%BE%E4%B8%80%E4%B8%AA%E7%AB%99%E7%82%B9/">如何快速使用wordpress建设一个站点</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/">stock相关逻辑</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/linux/" style="font-size: 12.288957366440451px;" class="tag-cloud-link">linux</a>
+    
+    <a href="/tags/kvm/" style="font-size: 16.52090111513025px;" class="tag-cloud-link">kvm</a>
+    
+    <a href="/tags/%E9%95%9C%E5%83%8F/" style="font-size: 11.477394070054178px;" class="tag-cloud-link">镜像</a>
+    
+    <a href="/tags/%E9%87%91%E8%9E%8D/" style="font-size: 15.041196937870435px;" class="tag-cloud-link">金融</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 双月候鸟 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Tue Nov 21 2023 01:25:14 GMT+0800'
+      window.commentConfig.owner = 'BlueSkyXXp'
+      window.commentConfig.repo = 'blogTalk'
+      window.commentConfig.client_id = '2176f319437ac0dc8bcc'
+      window.commentConfig.client_secret = '304f90d4b1c1a2760a6a440bd6d378dd94e8ab4e'
+      window.commentConfig.redirect_uri = 'https://blueskyxxp.github.io/'
+    } else {
+      window.commentConfig = {
+      	id: 'Tue Nov 21 2023 01:25:14 GMT+0800',
+        owner: 'BlueSkyXXp',
+        repo: 'blogTalk',
+        client_id: '2176f319437ac0dc8bcc',
+        client_secret: '304f90d4b1c1a2760a6a440bd6d378dd94e8ab4e',
+        redirect_uri: 'https://blueskyxxp.github.io/'
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
+
+
+</html>
