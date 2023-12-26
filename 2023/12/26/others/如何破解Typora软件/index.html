@@ -10,7 +10,7 @@
     
     
     
-    <title>catagories | 博客</title>
+    <title>如何手动破解Typora软件 | 博客</title>
     <link href="https://blueskyxxp.github.io" rel="prefetch" />
 
     
@@ -226,21 +226,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
-
-
+                    
 <article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://blueskyxxp.github.io">博客</a>
+        >
+        <span>如何手动破解Typora软件</span>
+    </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/catagories/index.html">catagories</a>
+                <a href="/2023/12/26/others/%E5%A6%82%E4%BD%95%E7%A0%B4%E8%A7%A3Typora%E8%BD%AF%E4%BB%B6/">如何手动破解Typora软件</a>
             </h1>
         </div>
         <div class="tag-article">
+            
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2023-05-01
+                <i class="fa fa-calendar"></i> 2023-12-26
             </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -248,16 +254,55 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/catagories/index.html">catagories</a>
+                    <a href="/2023/12/26/others/%E5%A6%82%E4%BD%95%E7%A0%B4%E8%A7%A3Typora%E8%BD%AF%E4%BB%B6/">如何手动破解Typora软件</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2023-05-01
+                <i class="fa fa-calendar"></i> 2023-12-26
+            </p>
+            <p>
+                
+                
             </p>
         </center>
     </div>
     <div class="content-article">
-        
+        <h2 id="软件介绍">软件介绍</h2>
+<p>Typora是一款轻量级的Markdown编辑器，适用于OS X、windows、linux三种系统。目前只有15天免费试用，后续使用必须拥有许可才行。</p>
+<h2 id="软件官方地址">软件官方地址</h2>
+<p><a target="_blank" rel="noopener" href="https://typora.io">typora</a></p>
+<h2 id="破解步骤">破解步骤</h2>
+<ol>
+<li class="lvl-3">
+<p>修改Typora安装目录\resources\page-dist\static\js\LicenseIndex.xxxxxxxxx.xxxxxxx.chunk.js，激活主程序</p>
+</li>
+</ol>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 查找下列字符串</span><br><span class="line">e.hasActivated=&quot;true&quot;==e.hasActivated,</span><br><span class="line"># 替换成下列字符串</span><br><span class="line">e.hasActivated=&quot;true&quot;==&quot;true&quot;,</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li class="lvl-3">
+<p>修改 Typora安装目录\resources\page-dist\license.html，关闭每次启动时的已激活弹窗</p>
+</li>
+</ol>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 查找下列字符串</span><br><span class="line">&lt;/body&gt;&lt;/html&gt;</span><br><span class="line"># 替换成下列字符串</span><br><span class="line">&lt;/body&gt;&lt;script&gt;window.onload=function()&#123;setTimeout(()=&gt;&#123;window.close();&#125;,5);&#125;&lt;/script&gt;&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li class="lvl-3">
+<p>修改 Typora安装目录\resources\locales\zh-Hans.lproj\Panel.json，去除左下角“未激活”提示</p>
+</li>
+</ol>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 查找下列字符串</span><br><span class="line">&quot;UNREGISTERED&quot;:&quot;未激活&quot;</span><br><span class="line"># 替换成下列字符串</span><br><span class="line">&quot;UNREGISTERED&quot;:&quot; &quot;</span><br></pre></td></tr></table></figure>
+<p>注意： 1.76版本能破解成功</p>
+<h2 id="参考资料">参考资料</h2>
+<blockquote>
+<ul class="lvl-1">
+<li class="lvl-2">
+<p><a href></a></p>
+</li>
+<li class="lvl-2">
+<p><a href></a></p>
+</li>
+</ul>
+</blockquote>
+
     </div>
 </article>
 
@@ -267,10 +312,9 @@
 <script>
 	if(!window.commentConfig) {
       window.commentConfig = {}
-      window.commentConfig.title = 'catagories'
+      window.commentConfig.title = '如何手动破解Typora软件'
     }
 </script>
-
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -404,13 +448,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/11/21/linux%E5%B7%A5%E5%85%B7/systemctl%E8%AF%A6%E8%A7%A3/">systemctl详解</a>
+                    <a href="/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/">mac锁屏后如何让程序继续运行</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/10/27/others/mac%E9%94%81%E5%B1%8F%E5%90%8E%E8%AE%A9%E7%A8%8B%E5%BA%8F%E7%BB%A7%E7%BB%AD%E8%BF%90%E8%A1%8C/">mac锁屏后如何让程序继续运行</a>
+                    <a href="/2023/11/24/others/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%911/">如何搭建代理访问谷歌</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/12/26/others/%E5%A6%82%E4%BD%95%E7%A0%B4%E8%A7%A3Typora%E8%BD%AF%E4%BB%B6/">如何手动破解Typora软件</a>
                 </span>
             </li>
             
@@ -434,6 +484,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2023/11/30/%E4%BA%91%E8%AE%A1%E7%AE%97/vpc/">详细了解各种云上vpc的原理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2023/11/14/%E4%BA%91%E8%AE%A1%E7%AE%97/winpe-build/">制作WinPE</a>
                 </span>
             </li>
@@ -446,19 +502,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/12/13/%E5%B7%A5%E5%85%B7/winpe_tool/">国内比较好用的winpe工具分享</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2023/11/21/%E9%87%91%E8%9E%8D/stock%E7%9B%B8%E5%85%B3%E9%80%BB%E8%BE%91/">stock相关逻辑</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/05/10/%E9%87%91%E8%9E%8D/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/">经济相关概念和知识--(1)</a>
                 </span>
             </li>
             
@@ -473,17 +517,17 @@
 
                 
                 <li>
-                    <a href="/catagories/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2023/12/26/others/%E5%A6%82%E4%BD%95%E7%A0%B4%E8%A7%A3Typora%E8%BD%AF%E4%BB%B6/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/catagories/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2023/12/26/others/%E5%A6%82%E4%BD%95%E7%A0%B4%E8%A7%A3Typora%E8%BD%AF%E4%BB%B6/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/catagories/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2023/12/26/others/%E5%A6%82%E4%BD%95%E7%A0%B4%E8%A7%A3Typora%E8%BD%AF%E4%BB%B6/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -491,13 +535,13 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E9%87%91%E8%9E%8D/" style="font-size: 12.293294910147894px;" class="tag-cloud-link">金融</a>
+    <a href="/tags/%E9%87%91%E8%9E%8D/" style="font-size: 16.47831437747488px;" class="tag-cloud-link">金融</a>
     
-    <a href="/tags/linux/" style="font-size: 13.273747334820706px;" class="tag-cloud-link">linux</a>
+    <a href="/tags/linux/" style="font-size: 16.25697013859371px;" class="tag-cloud-link">linux</a>
     
-    <a href="/tags/kvm/" style="font-size: 15.000871291195258px;" class="tag-cloud-link">kvm</a>
+    <a href="/tags/kvm/" style="font-size: 18.153471270886175px;" class="tag-cloud-link">kvm</a>
     
-    <a href="/tags/%E9%95%9C%E5%83%8F/" style="font-size: 10.149712249803006px;" class="tag-cloud-link">镜像</a>
+    <a href="/tags/%E9%95%9C%E5%83%8F/" style="font-size: 9.493085574753007px;" class="tag-cloud-link">镜像</a>
     
 </div>
                 
@@ -619,7 +663,7 @@
 
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = 'Mon May 01 2023 00:14:35 GMT+0800'
+      window.commentConfig.id = 'Tue Dec 26 2023 13:35:00 GMT+0800'
       window.commentConfig.owner = 'BlueSkyXXp'
       window.commentConfig.repo = 'blogTalk'
       window.commentConfig.client_id = '2176f319437ac0dc8bcc'
@@ -628,7 +672,7 @@
       window.commentConfig.proxy = 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
     } else {
       window.commentConfig = {
-      	id: 'Mon May 01 2023 00:14:35 GMT+0800',
+      	id: 'Tue Dec 26 2023 13:35:00 GMT+0800',
         owner: 'BlueSkyXXp',
         repo: 'blogTalk',
         client_id: '2176f319437ac0dc8bcc',
