@@ -200,6 +200,13 @@
 
   
   <url>
+    <loc>https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/</loc>
+    <lastmod>2023-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blueskyxxp.github.io/tags/linux/</loc>
     <lastmod>2023-12-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,13 +227,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/</loc>
-    <lastmod>2023-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -237,14 +237,14 @@
   </url>
   
   <url>
-    <loc>https://blueskyxxp.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <loc>https://blueskyxxp.github.io/categories/tool/</loc>
     <lastmod>2023-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blueskyxxp.github.io/categories/tool/</loc>
+    <loc>https://blueskyxxp.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2023-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -279,14 +279,14 @@
   </url>
   
   <url>
-    <loc>https://blueskyxxp.github.io/categories/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://blueskyxxp.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blueskyxxp.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://blueskyxxp.github.io/categories/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2023-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
