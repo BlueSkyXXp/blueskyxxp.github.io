@@ -1,3 +1,4 @@
+https://blueskyxxp.github.io/2024/01/14/others/test/
 https://blueskyxxp.github.io/2023/12/27/others/%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/
 https://blueskyxxp.github.io/2023/12/26/others/%E5%A6%82%E4%BD%95%E7%A0%B4%E8%A7%A3Typora%E8%BD%AF%E4%BB%B6/
 https://blueskyxxp.github.io/guestbook/index.html
@@ -20,14 +21,14 @@ https://blueskyxxp.github.io/2023/11/17/%E4%BA%91%E8%AE%A1%E7%AE%97/linux-system
 https://blueskyxxp.github.io/catagories/index.html
 https://blueskyxxp.github.io/404.html
 https://blueskyxxp.github.io/
-https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/
+https://blueskyxxp.github.io/tags/%E9%95%9C%E5%83%8F/
 https://blueskyxxp.github.io/tags/linux/
 https://blueskyxxp.github.io/tags/kvm/
-https://blueskyxxp.github.io/tags/%E9%95%9C%E5%83%8F/
-https://blueskyxxp.github.io/categories/%E5%85%B6%E4%BB%96/
+https://blueskyxxp.github.io/tags/%E9%87%91%E8%9E%8D/
 https://blueskyxxp.github.io/categories/tool/
-https://blueskyxxp.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/
+https://blueskyxxp.github.io/categories/%E5%85%B6%E4%BB%96/
 https://blueskyxxp.github.io/categories/%E9%95%9C%E5%83%8F/
+https://blueskyxxp.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/
 https://blueskyxxp.github.io/categories/%E7%BB%8F%E6%B5%8E/
 https://blueskyxxp.github.io/categories/linux%E5%B7%A5%E5%85%B7/
 https://blueskyxxp.github.io/categories/others/
