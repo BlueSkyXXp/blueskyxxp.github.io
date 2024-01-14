@@ -6,7 +6,7 @@
   <link href="https://blueskyxxp.github.io/atom.xml" rel="self"/>
   
   <link href="https://blueskyxxp.github.io/"/>
-  <updated>2024-01-14T15:26:44.941Z</updated>
+  <updated>2023-12-27T10:11:27.212Z</updated>
   <id>https://blueskyxxp.github.io/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://blueskyxxp.github.io/2024/01/14/others/test/"/>
-    <id>https://blueskyxxp.github.io/2024/01/14/others/test/</id>
-    <published>2024-01-14T15:26:33.000Z</published>
-    <updated>2024-01-14T15:26:44.941Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>djsklafnjdaskndfnsaj</p><h2 id="参考资料">参考资料</h2><blockquote><ul class="lvl-1"><li class="lvl-2"><p><a href></a></p></li><li class="lvl-2"><p><a href></a></p></li></ul></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="others" scheme="https://blueskyxxp.github.io/categories/others/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>分布式爬虫管理平台</title>
