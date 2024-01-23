@@ -6,7 +6,7 @@
   <link href="https://blueskyxxp.github.io/atom.xml" rel="self"/>
   
   <link href="https://blueskyxxp.github.io/"/>
-  <updated>2023-12-27T10:11:27.212Z</updated>
+  <updated>2024-01-23T08:36:08.912Z</updated>
   <id>https://blueskyxxp.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown文档图片上传github图床+免费CDN</title>
+    <link href="https://blueskyxxp.github.io/2024/01/23/others/Markdown%E6%96%87%E6%A1%A3%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0Github%E5%9B%BE%E5%BA%8A+%E5%85%8D%E8%B4%B9CDN/"/>
+    <id>https://blueskyxxp.github.io/2024/01/23/others/Markdown%E6%96%87%E6%A1%A3%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0Github%E5%9B%BE%E5%BA%8A+%E5%85%8D%E8%B4%B9CDN/</id>
+    <published>2024-01-23T08:35:51.000Z</published>
+    <updated>2024-01-23T08:36:08.912Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>Markdown文档图片上传Github图床+免费CDN</h1><h2 id="背景">背景</h2><p>在写博客时，常见的一种文档格式是Markdown格式，但是Markdown文档格式有个痛点，对于图片不方便管理。如果在Markdown中使用本地图片路径，分享到各大平台就非常不方便，需要将文章中的图片一并发送，如果能将图片上传到某个云存储中，通过网络路径来访问就能解决这个问题。还有一个问题就是云存储大部分是需要收费的，于是我想到了开源代码仓库。gitee和github仓库是免费开源的，gitee是国内的，在国内访问不受限但是很容易被封，基于以上原因最终选择了国外的github仓库和免费的jsdelivr CDN来实现图床。</p><h2 id="使用步骤">使用步骤</h2><ol><li class="lvl-3"><p>在github创建图床仓库，需要确保仓库是public。<br><img src="https://cdn.jsdelivr.net/gh/BlueSkyXXp/all-static-resource@latest/blog/images/create-repo-for-picgo.png" alt></p></li><li class="lvl-3"><p>在github创建token，需要授权仓库权限，用来picGo访问你的仓库。进入setting—&gt;Developer settings<br><img src="https://cdn.jsdelivr.net/gh/BlueSkyXXp/all-static-resource@latest/blog/images/create-github-token-for-picgo.png" alt></p></li><li class="lvl-3"><p><a href="https://picgo.github.io/PicGo-Doc/zh/guide/#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85">下载并安装picgo</a><br><strong>注意：macos打开PicGo可能会出现“已损坏，无法打开”等提示。可以使用如下命令解决</strong></p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo xattr -r -d com.apple.quarantine &#x27;/Applications/PictGo.app&#x27;</span><br></pre></td></tr></table></figure></li><li class="lvl-3"><p>配置picgo<br><img src="https://cdn.jsdelivr.net/gh/BlueSkyXXp/all-static-resource@latest/blog/images/picgo-config.png" alt><br>注意以下几点：</p><ol><li class="lvl-8">分支名。</li><li class="lvl-8">存储路径就是你仓库中的路径。</li><li class="lvl-8">自定义域名推荐 <a href="https://cdn.jsdeliv.net/gh/%7Bgithub%E7%94%A8%E6%88%B7%E5%90%8D%7D/%7B%E4%BB%93%E5%BA%93%E5%90%8D%7D@latest">https://cdn.jsdeliv.net/gh/{github用户名}/{仓库名}@latest</a></li></ol></li><li class="lvl-3"><p>配置jsdelivr加速<br>jsDelivr加速平台是面对全球开源免费的CDN，可以存放js,css,图片,重要的是jsDelivr在中国大陆也拥有超过数百个节点，因为jsDelivr拥有正规的ICP备案。</p><p>访问图片路径方式有两种</p><ol><li class="lvl-6"><p>直接访问(不推荐)</p>  <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jsDelivr 文件路径: https://cdn.jsdelivr.net/gh/user/repo/file</span><br><span class="line">例如: https://cdn.jsdelivr.net/gh/BlueSkyXXp/all-static-resource/blog/images/picgo-config.png</span><br></pre></td></tr></table></figure><p>不推荐，不太清楚如何更新cdn缓存。</p></li><li class="lvl-6"><p>每次访问最新文件(推荐)</p>  <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jsDelivr 文件路径: https://cdn.jsdelivr.net/gh/user/repo@latest/file</span><br><span class="line">例如: [https://](https://cdn.jsdelivr.net/gh/BlueSkyXXp/all-static-resource@latest/blog/images/picgo-config.png)</span><br></pre></td></tr></table></figure></li></ol></li><li class="lvl-3"><p>上传后可以去github查看是否上传<br><img src="https://cdn.jsdelivr.net/gh/BlueSkyXXp/all-static-resource@latest/blog/images/upload-image-to-github-by-picgo.png" alt></p></li></ol><h2 id="参考资料">参考资料</h2><blockquote><ul class="lvl-1"><li class="lvl-2"><p><a href></a></p></li><li class="lvl-2"><p><a href></a></p></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="others" scheme="https://blueskyxxp.github.io/categories/others/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>分布式爬虫管理平台</title>
