@@ -6,7 +6,7 @@
   <link href="https://blueskyxxp.github.io/atom.xml" rel="self"/>
   
   <link href="https://blueskyxxp.github.io/"/>
-  <updated>2024-01-23T08:36:08.912Z</updated>
+  <updated>2024-03-07T08:03:26.736Z</updated>
   <id>https://blueskyxxp.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JetBrains2023全家桶激活,亲测有效</title>
+    <link href="https://blueskyxxp.github.io/2024/03/07/others/jetbrans_activite/"/>
+    <id>https://blueskyxxp.github.io/2024/03/07/others/jetbrans_activite/</id>
+    <published>2024-03-07T07:39:54.000Z</published>
+    <updated>2024-03-07T08:03:26.736Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="JetBrains相关产品的激活码">JetBrains相关产品的激活码</h2><p><strong>注意</strong> : 激活后，补丁的文件夹不能删除或者移动，否则激活失败。脚本的原理: 会给系统添加一个环境变量，并指向补丁的脚本文件，所以不能删除或者移动。</p><p><a href="https://yunzhongzhuan.com.publicdn.com/download/2823835/sHRZIs3S/JetBrains%E5%85%B6%E4%BB%96%E4%BA%A7%E5%93%81%E5%AF%B9%E5%BA%94%E6%BF%80%E6%B4%BB%E7%A0%81.pdf">激活码文件链接</a></p><h2 id="参考资料">参考资料</h2><blockquote><ul class="lvl-1"><li class="lvl-2"><p><a href></a></p></li><li class="lvl-2"><p><a href></a></p></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="others" scheme="https://blueskyxxp.github.io/categories/others/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Markdown文档图片上传github图床+免费CDN</title>
